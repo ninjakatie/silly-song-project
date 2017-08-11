@@ -1,26 +1,109 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1611" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Silly_Song" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="mlG-PR-y2T">
+                                <rect key="frame" x="36" y="40" width="303" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Silly Song" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcY-e4-qn1">
+                                        <rect key="frame" x="112" y="19.5" width="79" height="21"/>
+                                        <color key="tintColor" red="0.9345751886" green="0.99835759400000001" blue="0.89827731509999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <color key="textColor" red="1" green="0.2271585501452632" blue="0.31351090027677775" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="highlightedColor" red="0.99835759401321411" green="0.28865089065248389" blue="0.90147894751999536" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="shadowColor" cocoaTouchSystemColor="lightTextColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.99835759400000001" green="0.75551442650339284" blue="0.73410539667793451" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="fcY-e4-qn1" firstAttribute="centerX" secondItem="mlG-PR-y2T" secondAttribute="centerX" id="XUw-4q-kFZ"/>
+                                    <constraint firstAttribute="height" constant="60" id="bCc-JN-tKi"/>
+                                    <constraint firstItem="fcY-e4-qn1" firstAttribute="centerY" secondItem="mlG-PR-y2T" secondAttribute="centerY" id="omO-9F-WCf"/>
+                                </constraints>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Zhg-bm-6Qg">
+                                <rect key="frame" x="37.5" y="120" width="300" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="CZP-M2-jTr"/>
+                                    <constraint firstAttribute="height" constant="300" id="q3U-Wa-zNE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter Your First Name" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jGK-Y6-vkB">
+                                <rect key="frame" x="62.5" y="440" width="250" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="h95-Qi-ejX"/>
+                                    <constraint firstAttribute="width" constant="250" id="jJG-NQ-oF4"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardAppearance="alert" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="displayLyrics:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="S1a-v2-PPg"/>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="TeH-kK-hwX"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4g-aW-p3T">
+                                <rect key="frame" x="137.5" y="521" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.99835759400000001" green="0.7555144265" blue="0.73410539669999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="jy7-qB-vc4"/>
+                                </constraints>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Enter"/>
+                                <connections>
+                                    <action selector="enterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AEu-9D-oTH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.77114950853990138" green="0.84734493856241266" blue="0.99835759400000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="C4g-aW-p3T" firstAttribute="top" secondItem="jGK-Y6-vkB" secondAttribute="bottom" constant="41" id="Brg-Ts-Cbd"/>
+                            <constraint firstItem="Zhg-bm-6Qg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BwX-Av-QFJ"/>
+                            <constraint firstItem="C4g-aW-p3T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UYc-jo-DW8"/>
+                            <constraint firstItem="mlG-PR-y2T" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="ahO-R4-lBs"/>
+                            <constraint firstItem="mlG-PR-y2T" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="alb-8D-a6d"/>
+                            <constraint firstItem="jGK-Y6-vkB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ar9-ta-0pa"/>
+                            <constraint firstItem="jGK-Y6-vkB" firstAttribute="top" secondItem="Zhg-bm-6Qg" secondAttribute="bottom" constant="20" id="wf8-qd-wmK"/>
+                            <constraint firstItem="Zhg-bm-6Qg" firstAttribute="top" secondItem="mlG-PR-y2T" secondAttribute="bottom" constant="20" id="yBi-H0-Hc4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mlG-PR-y2T" secondAttribute="trailing" constant="20" id="z1G-D3-Q1q"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="NameField" destination="jGK-Y6-vkB" id="gz8-Cx-qym"/>
+                        <outlet property="enterBtn" destination="C4g-aW-p3T" id="39F-RQ-1S3"/>
+                        <outlet property="lyricsView" destination="Zhg-bm-6Qg" id="ttv-i9-Vox"/>
+                        <outlet property="nameField" destination="jGK-Y6-vkB" id="Nur-vM-TV0"/>
+                        <outlet property="titleBox" destination="fcY-e4-qn1" id="lgA-yD-5P0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="138.40000000000001" y="136.28185907046478"/>
         </scene>
     </scenes>
 </document>
